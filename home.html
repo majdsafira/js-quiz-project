@@ -22,7 +22,7 @@
             <div class="breif">
                 <h1>Orange Coding Academy Quiz</h1>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo blanditiis incidunt nesciunt natus, nemo, necessitatibus inventore delectus ex</p>
-                <button id="btn">Register</button>
+                <button id="btn" onclick="cl()">Register</button>
             </div>
             <div class="imge">
                 <video src="/media/pexels-mati-mango-6330779 (1).mp4" autoplay loop id="vid"></video>
@@ -30,7 +30,11 @@
         </div>
     </div>
 
-      
+      <script>
+          function cl() {
+              window.location.href= "http://127.0.0.1:5500/js-quiz-project/reg.html";
+          }
+      </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
