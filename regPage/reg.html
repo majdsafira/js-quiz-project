@@ -8,13 +8,15 @@
     <link rel="stylesheet" href="reg.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
   </head>
   <body>
     <video src="/media/vvv.mp4" id="backg" muted loop autoplay ></video>
     <div class="cont">
       <div class="reg-card">
           
-          <form action="http://127.0.0.1:5500/js-quiz-project/login.html">
+          <form>
             <h1>Registration</h1><br/>
             <label>First Name:</label>
             <input type="text" id="fname" name="fname" required><br/>
@@ -38,7 +40,7 @@
             <input type="password" id="passCon" required><br/>
             <span id="checkCon">please confirm your password</span>
             
-            <input type="submit" value="SignUP" onclick="reg()" id="btn">
+            <input type="button" value="SignUP" onclick="reg()" id="btn">
         </form>
       </div>
     </div>

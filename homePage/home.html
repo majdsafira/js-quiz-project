@@ -1,35 +1,42 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Registration Page</title>
+    <title>Quiz Site</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="reg.css">
+    <link rel="stylesheet" href="home.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
   </head>
   <body>
-    <video src="/media/vvv.mp4" id="backg" muted loop autoplay ></video>
-    <div class="cont">
-      <div class="reg-card">
-          
-          <form>
-            <h1>Log IN </h1><br/>        
-            <label>Email:</label>
-            <input type="email" id="em" name="email" required><br/>
-            <span id="emailCh">please check your email</span>
-
-            <label>Password:</label>
-            <input type="password" id="pass" name="password" required><br/>
-            <span id="passCh">password wrong</span>
+   
+        <video src="/media/vvv.mp4" id="background" muted loop autoplay ></video>
+    <div class="content">
             
-            <input type="submit" value="SignUP" onclick="reg()" id="btn">
-        </form>
-      </div>
+      
+
+        <!--home page-->
+        <div class="cardEdit">
+            <div class="imge">
+                <img src="/media/pngwing.com (1).png" id="im">
+            </div>
+            <div class="breif">
+                <h1>Orange Coding Academy</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo blanditiis incidunt nesciunt natus, nemo, necessitatibus inventore delectus ex</p><br>
+                <button id="btn" onclick="cl()">Register</button>
+            </div>
+            
+        </div>
     </div>
 
-    <script src="reg.js"></script>
+      <script>
+          function cl() {
+              window.location.href= "/js-quiz-project/regPage/reg.html";
+          }
+      </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
