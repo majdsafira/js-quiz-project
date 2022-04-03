@@ -230,7 +230,26 @@ if (i == 0 ){
 
 }
 
+// to get berder of answer effict ehen you click it
 
+function divAple(P) {
+
+    document.getElementById("button-next").disabled = false;
+
+    if (P == 1){
+        document.getElementById("rad1").checked = true;
+    }
+    if (P == 2){
+        document.getElementById("rad2").checked = true;
+    }
+    if (P == 3){
+        document.getElementById("rad3").checked = true;
+    }
+    if (P == 4){
+        document.getElementById("rad4").checked = true;
+    }
+
+}
 
 function butAple(){
     document.getElementById("button-next").disabled=false;
