@@ -17,8 +17,7 @@ if ( x > 9){
 
 
 function toWel() {
-    window.location.href = "/js-quiz-project/homePage/home.html";
-    document.getElementById("btn").style.display = "none";
+    window.location.href = "/js-quiz-project/finishPage/finish.html";
 };
 
 toWel();
