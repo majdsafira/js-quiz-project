@@ -102,22 +102,36 @@
 
 
 
+  /*-----------------------------------------------media query(reuslt)-------------------------------------*/
 
 @media screen and (max-width: 600px) {
     .result_box {
-       width: 300px;
+       width: 200px;
        height: 500px;
-       margin-left: 5px;
+       
     }
     .result_box .buttons .finish
     {
         width:90px;
-        margin-left: 40px;
+        position: relative;
+        bottom: 40px;
+        left:20px;
+        font-size: 15px;
+      
     }
     .result_box .buttons .show_result
     {
-        width:140px;
-        margin-right: 35px;
+        width:130px;
+        position: relative;
+        bottom: 40px;
+        right: 25px;
+        font-size: 15px;
+    }
+
+    .result_box .complete_text
+    {
+
+        margin: 10px;
     }
    
   }

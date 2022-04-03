@@ -2,6 +2,8 @@
     font-family: 'Work Sans', sans-serif;
         font-weight: 800;
 }
+
+/* vid edit*/
 #backg {
     position: fixed;
     right: 0;
@@ -10,6 +12,7 @@
     min-height: 100%;
   }
 
+  /*btn edit**/
   #btn {
     border: solid 1px;
     border-radius: 50px;
@@ -24,12 +27,13 @@
 }
 
   
+/* content edit*/
 .cont {
     position: fixed;
     width: 100%;
 }
 
-
+/* reg card edit */
 .reg-card {
     background-color: rgb(228, 228, 228);
     display: flex;
@@ -46,13 +50,14 @@
     
 }
 
+/*form edit*/
 form {
     display: grid;
     grid-template-columns: auto;
     width: 75%;
 }
 
-
+/*input edit */
 input{
     border-radius: 20px;
     width: 100%;

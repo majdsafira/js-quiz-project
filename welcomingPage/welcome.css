@@ -2,6 +2,8 @@
     font-family: 'Work Sans', sans-serif;
         font-weight: 800;
 }
+
+/*video edit */
 #background {
     position: fixed;
     right: 0;
@@ -10,12 +12,14 @@
     min-height: 100%;
   }
 
-  #im {
+  #vd {
       width: 20%;
       height: 90%;
       
   }
 
+
+/*btn edit */
 #btn {
     border: solid 1px;
     border-radius: 50px;
@@ -35,13 +39,13 @@ p {
     padding: 1% 2%;
 }
 
-
+/* cont edit*/
 .content {
     position: fixed;
     margin-top: 3%;
 }
 
-
+/* card edit*/ 
 .cardEdit {
     
     margin: 45px;
@@ -49,6 +53,8 @@ p {
 
 }
 
+
+/* breif quiz edit */
 .breif {
     display: flex;
     flex-direction: row;

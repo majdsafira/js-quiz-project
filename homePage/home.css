@@ -2,6 +2,7 @@
     font-family: 'Work Sans', sans-serif;
         font-weight: 800;
 }
+/*video background*/
 #background {
     position: fixed;
     right: 0;
@@ -9,13 +10,13 @@
     min-width: 100%; 
     min-height: 100%;
   }
-
-  #im {
+/*image edit */
+  #vd {
       width: 20%;
       height: 90%;
       
   }
-
+/*reg btn*/
 #btn {
     border: solid 1px;
     border-radius: 50px;
@@ -27,6 +28,7 @@
     transform: scale(1.2 , 1.2);
 }
 
+
 h1 {
     padding: 1% 2%;
 }
@@ -35,13 +37,13 @@ p {
     padding: 1% 2%;
 }
 
-
+/* content edit */
 .content {
     position: fixed;
     margin-top: 3%;
 }
 
-
+/* card edit*/
 .cardEdit {
     
     margin: 45px;
@@ -49,6 +51,8 @@ p {
 
 }
 
+
+/* breif edit*/
 .breif {
     display: flex;
     flex-direction: row;
@@ -60,9 +64,11 @@ p {
     margin-top: 3%;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
     
 }
 
+/* img edit*/
 .imge {
     display: flex;
     flex-direction: row;
