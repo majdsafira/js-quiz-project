@@ -1,8 +1,3 @@
-f = []
-syff = []
-pass = []
-test=[]
-let i = 0
 var myQ = [
     {
         question: "What is the plural of appendix?",
@@ -44,7 +39,7 @@ var myQ = [
         },
         correctAnswer: 'b'
     },
-    
+
     {
         question: "Straw is to drink as food is to plate as drink is to :",
         answers: {
@@ -210,171 +205,123 @@ var myQ = [
 
 ];
 
-document.getElementById("button-next").disabled=true;
+for (i = 0; i < myQ.length; i++) {
+    //Id
+    var qId = 'q' + i;
+    var input1Id = 'ia1' + i;
+    var input2Id = 'ia2' + i;
+    var input3Id = 'ia3' + i;
+    var input4Id = 'ia4' + i;
+    var rad1Id = 'rad1' + i;
+    var rad2Id = 'rad2' + i;
+    var rad3Id = 'rad3' + i;
+    var rad4Id = 'rad4' + i;
+    var ans1Id = 'ans1' + i;
+    var ans2Id = 'ans2' + i;
+    var ans3Id = 'ans3' + i;
+    var ans4Id = 'ans4' + i;
+    //create tr and td
+    document.getElementById('table').innerHTML += ` <tr> <td><div class="div-form"><div id="form">  <hr> <div class="div-input-p">  <p class="para" id="${qId}"></p> <div class="input-answer" id="${input1Id}"  >  <input type="radio" name="answer" id="${rad1Id}" onchange="butAple()">  <label  id="${ans1Id}" for="${rad1Id}"></label> </div> <div class="input-answer"  id="${input2Id}"  > <input type="radio" name="answer" id="${rad2Id}" onchange="butAple()">   <label  id="${ans2Id}" for="${rad2Id}"></label>   </div>    <div class="input-answer" id="${input3Id}"   >    <input type="radio" name="answer" id="${rad3Id}" onchange="butAple()"> <label id="${ans3Id}" for="${rad3Id}"></label> </div>  <div class="input-answer"   id="${input4Id}" >  <input type="radio" name="answer" id="${rad4Id}" onchange="butAple()">   <label  id="${ans4Id}" for="${rad4Id}"></label>  </div></div> <hr></div></div></td><td> `;
 
+    //disabled radio buuton
+    document.getElementById(`${rad1Id}`).disabled = true;
+    document.getElementById(`${rad2Id}`).disabled = true;
+    document.getElementById(`${rad3Id}`).disabled = true;
+    document.getElementById(`${rad4Id}`).disabled = true;
 
+    //get data from array
+    document.getElementById(`${qId}`).innerHTML = `Q${i + 1}: ` + myQ[i].question;
 
+    document.getElementById(`${ans1Id}`).innerHTML = myQ[i].answers["a"];
 
+    document.getElementById(`${ans2Id}`).innerHTML = myQ[i].answers["b"];
 
-if (i == 0 ){
-    document.getElementById("q").innerHTML = `Q${0+1}: `+myQ[0].question;
-    // console.log(myQ[i].question)
+    document.getElementById(`${ans3Id}`).innerHTML = myQ[i].answers["c"];
 
-    document.getElementById("ans1").innerHTML = myQ[0].answers["a"];
+    document.getElementById(`${ans4Id}`).innerHTML = myQ[i].answers["d"];
 
-    document.getElementById("ans2").innerHTML = myQ[0].answers["b"];
-
-    document.getElementById("ans3").innerHTML = myQ[0].answers["c"];
-
-    document.getElementById("ans4").innerHTML = myQ[0].answers["d"];
-
-}
-
-// to get berder of answer effict ehen you click it
-
-function divAple(P) {
-
-    document.getElementById("button-next").disabled = false;
-
-    if (P == 1){
-        document.getElementById("rad1").checked = true;
+    //check correct answer and set background green
+    if (i == 0) {
+        document.getElementById(`${input3Id}`).style.backgroundColor = 'green';
     }
-    if (P == 2){
-        document.getElementById("rad2").checked = true;
+    else if (i == 1) {
+        document.getElementById(`${input4Id}`).style.backgroundColor = 'green';
     }
-    if (P == 3){
-        document.getElementById("rad3").checked = true;
+    else if (i == 2) {
+        document.getElementById(`${input3Id}`).style.backgroundColor = 'green';
     }
-    if (P == 4){
-        document.getElementById("rad4").checked = true;
+    else if (i == 3) {
+        document.getElementById(`${input2Id}`).style.backgroundColor = 'green';
     }
-
-}
-
-function butAple(){
-    document.getElementById("button-next").disabled=false;
-
-}
-
-
-
-
-function orph() {
-    
-    // connect the quastion  and answers
-
-
-    if (myQ[i].correctAnswer == "a") {
-        document.getElementById("ans1").value = "1";
+    else if (i == 4) {
+        document.getElementById(`${input2Id}`).style.backgroundColor = 'green';
     }
-    if (myQ[i].correctAnswer == "b") {
-        document.getElementById("ans2").value = "1";
+    else if (i == 5) {
+        document.getElementById(`${input3Id}`).style.backgroundColor = 'green';
     }
-    if (myQ[i].correctAnswer == "c") {
-        document.getElementById("ans3").value = "1";
+    else if (i == 6) {
+        document.getElementById(`${input4Id}`).style.backgroundColor = 'green';
     }
-    if (myQ[i].correctAnswer == "d") {
-        document.getElementById("ans4").value = "1";
+    else if (i == 7) {
+        document.getElementById(`${input3Id}`).style.backgroundColor = 'green';
     }
-
-
-
-    // data for sucsses answer
-    if (document.getElementById("rad1").checked == true && document.getElementById("ans1").value == "1") {
-        pass.push(i);
+    else if (i == 8) {
+        document.getElementById(`${input4Id}`).style.backgroundColor = 'green';
     }
-    if (document.getElementById("rad2").checked == true && document.getElementById("ans2").value == "1") {
-        pass.push(i);
+    else if (i == 9) {
+        document.getElementById(`${input4Id}`).style.backgroundColor = 'green';
     }
-    if (document.getElementById("rad3").checked == true && document.getElementById("ans3").value == "1") {
-        pass.push(i);
+    else if (i == 10) {
+        document.getElementById(`${input2Id}`).style.backgroundColor = 'green';
     }
-    if (document.getElementById("rad4").checked == true && document.getElementById("ans4").value == "1") {
-        pass.push(i);
+    else if (i == 11) {
+        document.getElementById(`${input1Id}`).style.backgroundColor = 'green';
     }
-
-
-    // data for unsucsses answer
-
-    if (document.getElementById("rad1").checked == true && document.getElementById("ans1").value != "1") {
-        f.push(i)
-        syff.push("a")
+    else if (i == 12) {
+        document.getElementById(`${input2Id}`).style.backgroundColor = 'green';
     }
-    if (document.getElementById("rad2").checked == true && document.getElementById("ans2").value != "1") {
-        f.push(i)
-        syff.push("b")
+    else if (i == 13) {
+        document.getElementById(`${input3Id}`).style.backgroundColor = 'green';
     }
-    if (document.getElementById("rad3").checked == true && document.getElementById("ans3").value != "1") {
-        f.push(i)
-        syff.push("c")
+    else if (i == 14) {
+        document.getElementById(`${input3Id}`).style.backgroundColor = 'green';
     }
-    if (document.getElementById("rad4").checked == true && document.getElementById("ans4").value != "1") {
-        f.push(i)
-        syff.push("d")
+    else if (i == 15) {
+        document.getElementById(`${input3Id}`).style.backgroundColor = 'green';
+    }
+    else if (i == 16) {
+        document.getElementById(`${input1Id}`).style.backgroundColor = 'green';
+    }
+    else if (i == 17) {
+        document.getElementById(`${input1Id}`).style.backgroundColor = 'green';
+    }
+    else if (i == 18) {
+        document.getElementById(`${input2Id}`).style.backgroundColor = 'green';
+    }
+    else if (i == 19) {
+        document.getElementById(`${input2Id}`).style.backgroundColor = 'green';
     }
 
 
-   // wo ge here to the next quastion on myQ array
-    i += 1 ;
-
-
-    // the last condetions 
-
-
-    // end of quiz it will trans you for result page
-    if(i == myQ.length){
-        window.location.href="/js-quiz-project/resultPage/res.html";
+    //check user uncorrect answer from session storage and set background red
+    for (j = 0; j < sessionStorage.getItem('falseQ').length; j++) {
+        if (sessionStorage.getItem('falseQ')[j] == i) {
+            if (sessionStorage.getItem('falseAns')[j] == 'a') {
+                document.getElementById(`${input1Id}`).style.backgroundColor = 'red';
+            }
+            else if (sessionStorage.getItem('falseAns')[j] == 'b') {
+                document.getElementById(`${input2Id}`).style.backgroundColor = 'red';
+            }
+            else if (sessionStorage.getItem('falseAns')[j] == 'c') {
+                document.getElementById(`${input3Id}`).style.backgroundColor = 'red';
+            }
+            else if (sessionStorage.getItem('falseAns')[j] == 'd') {
+                document.getElementById(`${input4Id}`).style.backgroundColor = 'red';
+            }
+        }
     }
 
-    // trans next btn to finish btn
-    if(i == myQ.length - 1){
-        document.getElementById("button-next").innerHTML="Finish";
-    }
 
-
-    
-    // write the next quastion and the multibul choois on card
-    document.getElementById("q").innerHTML = `Q${i+1}: `+myQ[i].question;
-
-    document.getElementById("ans1").innerHTML = myQ[i].answers["a"];
-
-    document.getElementById("ans2").innerHTML = myQ[i].answers["b"];
-
-    document.getElementById("ans3").innerHTML = myQ[i].answers["c"];
-
-    document.getElementById("ans4").innerHTML = myQ[i].answers["d"];
-
-
-    // trans the pass answer to session storage
-    // trans the falseQ and falseAnswe answer to session storage
-
-    sessionStorage.setItem("passQ",pass.length)
-    sessionStorage.setItem("falseQ",f)
-    sessionStorage.setItem("falseAns",syff)
-
-    // reset orders
-
-    document.getElementById("rad1").checked = false;
-    document.getElementById("rad2").checked = false;
-    document.getElementById("rad3").checked = false;
-    document.getElementById("rad4").checked = false;
-
-    document.getElementById("button-next").disabled=true;
-    
-    document.getElementById("ans1").value = "0";
-    document.getElementById("ans2").value = "0";
-    document.getElementById("ans3").value = "0";
-    document.getElementById("ans4").value = "0";
-
-
-    // englesh siction
-    if ( i == 5){
-        alert("now we are going to english language section")
-    }
-    // technical section
-    if ( i == 10){
-        alert("now we are going to technical section")
-    }
 
 
 }

@@ -15,9 +15,13 @@ if ( x > 9){
     
 }
 
+function toShw() {
+    window.location.href = "/js-quiz-project/showPage/show.html";
+};
 
 function toWel() {
     window.location.href = "/js-quiz-project/finishPage/finish.html";
 };
 
 toWel();
+toShw();
