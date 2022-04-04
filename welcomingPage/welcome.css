@@ -12,7 +12,7 @@
     min-height: 100%;
   }
 
-  #vd {
+  #im {
       width: 20%;
       height: 90%;
       
@@ -79,21 +79,36 @@ span {
 
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
     #im {
         display: none;
     }
     .breif {
         width: 100%;
         text-align: center;  
-        margin-top: 25%;     
+        margin-top: 20%;     
      
     }
     #btn {
-        width: 50%;
+        width: 70%;
     }
 
     
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    #im {
+        width: 35%;
+    }
+    .breif {
+        width: 100%;
+        text-align: center;  
+     
+    }
+    #btn {
+        width: 70%;
+    }
+
 }
 
 
