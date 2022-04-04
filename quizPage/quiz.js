@@ -317,6 +317,13 @@ function orph() {
    // wo ge here to the next quastion on myQ array
     i += 1 ;
 
+    // trans the pass answer to session storage
+    // trans the falseQ and falseAnswe answer to session storage
+
+    sessionStorage.setItem("passQ",pass.length)
+    sessionStorage.setItem("falseQ",JSON.stringify(f))
+    sessionStorage.setItem("falseAns",JSON.stringify(syff))
+
 
     // the last condetions 
 
@@ -343,14 +350,6 @@ function orph() {
     document.getElementById("ans3").innerHTML = myQ[i].answers["c"];
 
     document.getElementById("ans4").innerHTML = myQ[i].answers["d"];
-
-
-    // trans the pass answer to session storage
-    // trans the falseQ and falseAnswe answer to session storage
-
-    sessionStorage.setItem("passQ",pass.length)
-    sessionStorage.setItem("falseQ",f)
-    sessionStorage.setItem("falseAns",syff)
 
     // reset orders
 
