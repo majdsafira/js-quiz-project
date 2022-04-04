@@ -25,6 +25,9 @@
     border-radius: 50px;
     width: 35%;
     transition: 1s;
+    padding: 10px;
+    position: relative;
+    bottom: 15px;
     
 }
 #btn:hover {

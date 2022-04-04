@@ -42,7 +42,7 @@
   font-size: 20px;
   font-weight: 800;
   position: relative;
-  top:20px;
+  top:7px;
 
 }
 
@@ -119,20 +119,72 @@
 
 
   
+  
 /*-----------------------------------------------media query(reuslt)-------------------------------------*/
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 479px)
+{
     .result_box {
-       width: 200px;
-       height: 380px;
+        width: 200px;
+        height: 470px;
+        
+     }
+     .result_box .buttons #finish
+     {
+         width:90px;
+         position: relative;
+         top:20px;
+         left:20px;
+         font-size: 15px;
+       
+     }
+     .result_box .buttons #show_result
+     {
+         width:130px;
+         position: relative;
+         top:20px;
+         right: 25px;
+         font-size: 15px;
+     }
+ 
+     .result_box .complete_text
+     {
+ 
+         margin: 10px;
+     }
+ 
+     #image
+     {
+         width:250px;
+         position: relative;
+         bottom:20px;
+     }
+     #image2
+     {
+         width:250px;
+         position: relative;
+         top:20px;
+     }
+
+
+    
+
+}
+
+
+@media screen and (min-width: 480px) and (max-width: 768px)
+{
+    .result_box {
+       width: 300px;
+       height: 500px;
        
     }
     .result_box .buttons #finish
     {
         width:90px;
         position: relative;
-      top:20px;
-        left:20px;
+       top:20px;
+       right: 10px;
         font-size: 15px;
       
     }
@@ -141,7 +193,7 @@
         width:130px;
         position: relative;
         top:20px;
-        right: 25px;
+        left: 10px;
         font-size: 15px;
     }
 
@@ -153,13 +205,13 @@
 
     #image
     {
-        width:250px;
+        width:320px;
         position: relative;
         top:20px;
     }
     #image2
     {
-        width:250px;
+        width:320px;
 
     }
    

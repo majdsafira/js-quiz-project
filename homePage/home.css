@@ -22,6 +22,9 @@
     border-radius: 50px;
     width: 25%;
     transition: 1s;
+    padding: 10px;
+    position: relative;
+    bottom: 15px;
     
 }
 #btn:hover {
@@ -47,7 +50,7 @@ p {
 .cardEdit {
     
     margin: 45px;
-    margin-top: 2%;
+    margin-top: 1%;
 
 }
 
